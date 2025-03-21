@@ -7,25 +7,8 @@ import mediapipe as mp
 import joblib
 from collections import deque, Counter
 import threading
-import os
-import requests
 
 
-def download_model_from_drive():
-    model_path = "models/static_sign_classifier.pkl"
-    if not os.path.exists(model_path):
-        st.info("🔄 Downloading model from Google Drive...")
-        file_id = "1t_hjYRqIMLI6WukQXEqQNQWFU7rMU0OA"
-        url = f"https://drive.google.com/uc?export=download&id={file_id}"
-        response = requests.get(url)
-        os.makedirs("models", exist_ok=True)
-        with open(model_path, 'wb') as f:
-            f.write(response.content)
-        st.success("✅ Model downloaded successfully.")
-
-
-
-download_model_from_drive()
 clf = joblib.load("models/static_sign_classifier.pkl")
 
 # Load model
