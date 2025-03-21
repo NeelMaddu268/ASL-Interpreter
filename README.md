@@ -68,27 +68,6 @@ streamlit run streamlit_app.py
 
 ---
 
-## 📦 Model Download Info
-
-The model file (`static_sign_classifier.pkl`) is **NOT included in this repo** (it exceeds GitHub's 100MB file limit).
-
-Instead, the app automatically downloads it on first run from this Google Drive link:
-https://drive.google.com/file/d/1t_hjYRqIMLI6WukQXEqQNQWFU7rMU0OA/view?usp=sharing
-
-You don’t need to do anything manually — it’s handled in the code.
-
----
-
-## ☁️ Streamlit Cloud Deployment
-
-1. Push this project to your GitHub account
-2. Go to https://streamlit.io/cloud
-3. Click “Deploy an app”
-4. Select your GitHub repo
-5. Set `streamlit_app.py` as the entry point
-6. Your app will launch and auto-download the model
-
----
 
 ## 🙌 Credits
 
