@@ -1,0 +1,17 @@
+# Ignore all data/datasets
+data/
+datasets/
+ASL Alphabet Archive/
+
+# Ignore Python environment
+venv/
+__pycache__/
+*.pyc
+
+# Ignore audio temp files
+*.mp3
+
+# Ignore Streamlit config
+.streamlit/
+
+*.pkl
