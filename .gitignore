@@ -13,5 +13,3 @@ __pycache__/
 
 # Ignore Streamlit config
 .streamlit/
-
-*.pkl
