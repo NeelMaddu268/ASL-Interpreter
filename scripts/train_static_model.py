@@ -64,5 +64,5 @@ print("\nDetailed Report:\n", classification_report(y_test, y_pred))
 MODEL_DIR = "models"
 os.makedirs(MODEL_DIR, exist_ok=True)
 
-joblib.dump(clf, os.path.join(MODEL_DIR, "static_sign_classifier.pkl"))
+joblib.dump(clf, os.path.join(MODEL_DIR, "static_sign_classifier.pkl"), compress=3, protocol=4)
 print(f"\n✅ Model saved to {MODEL_DIR}/static_sign_classifier.pkl")
